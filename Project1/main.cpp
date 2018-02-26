@@ -24,6 +24,12 @@ int main()
         case 2:
             w1.wyswietl();
             break;
+		case 3:
+			w1.zdobadz_exp();
+			break;
+		case 4:
+			w1.przydziel_punkty();
+			break;
         }
     }
 

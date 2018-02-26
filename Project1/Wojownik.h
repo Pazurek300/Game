@@ -11,7 +11,7 @@ protected:
 public :
 
 
-    Wojownik(string ="Janusz", string ="Czlowiek", string ="Wojownik",int =3, int =5, int =3, int =1, int =100, int =150, int =1,int =0,int =3, int =0);
+    Wojownik(string ="Janusz", string ="Czlowiek", string ="Wojownik",int =3, int =5, int =3, int =1, int =100, int =150, int =1,int =0,int =3, int =0,int =0);
     void wyswietl();
 
   /*

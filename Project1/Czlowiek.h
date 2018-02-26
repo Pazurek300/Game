@@ -19,16 +19,19 @@ protected:
     int level;
     int exp;
     int pancerz;
+	int punkty;
 
 public :
 
 
-    Czlowiek(string ="Bezimienny", string ="Czlowiek", string ="Brak",int =1, int =0, int =0, int =0, int =100, int =100, int =1,int =0,int =0);
+    Czlowiek(string ="Bezimienny", string ="Czlowiek", string ="Brak",int =1, int =0, int =0, int =0, int =100, int =100, int =1,int =0,int =0,int =0);
     void wyswietl();
     void podaj_nazwe();
+	void zdobadz_exp();
+	void przydziel_punkty();
+	void menu();
    /* int dodaj_wojownika();
     virtual int atak()=0;
-    int zdobadz_exp();
     int dodaj_statystyke();
 */
 

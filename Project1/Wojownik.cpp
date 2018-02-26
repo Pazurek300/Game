@@ -4,8 +4,8 @@
 
 using namespace std;
 
-Wojownik::Wojownik(string n, string r, string p,int d, int s, int z, int i, int w, int h, int l,int e,int pan, int fur)
-    :Czlowiek(n,r,p,d,s,z,i,w,h,l,e,pan)
+Wojownik::Wojownik(string n, string r, string p,int d, int s, int z, int i, int w, int h, int l,int e,int pan,int pkt, int fur)
+    :Czlowiek(n,r,p,d,s,z,i,w,h,l,e,pan,pkt)
     {
     furia=fur;
     }
@@ -15,7 +15,7 @@ Wojownik::Wojownik(string n, string r, string p,int d, int s, int z, int i, int 
 void Wojownik::wyswietl()
 {
     Czlowiek::wyswietl();
-    cout<<"Punkty furii: "<<furia<<endl;
+  //  cout<<"Punkty furii: "<<furia<<endl;
 }
 
 
