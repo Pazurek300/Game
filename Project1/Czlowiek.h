@@ -29,10 +29,5 @@ public :
     void podaj_nazwe();
 	void zdobadz_exp();
 	void przydziel_punkty();
-	void menu();
-   /* int dodaj_wojownika();
-    virtual int atak()=0;
-    int dodaj_statystyke();
-*/
 
 };

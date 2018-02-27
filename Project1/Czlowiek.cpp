@@ -50,7 +50,8 @@ void Czlowiek::wyswietl()
 	{
 		cout << "Ilosc doswiadczenia potrzebna do nastepnego poziomu: " << 2*(65 * pow(level, 2) + 165 * level + 6750) << endl;
 	}
-    cout <<endl;
+	cout << endl;
+		system("pause");
 
 }
 
@@ -63,8 +64,8 @@ void Czlowiek::podaj_nazwe()
 
 void Czlowiek::przydziel_punkty()
 {
-	bool koniec = false;
 	int wybor = 0;
+	bool stop = false;
 	do
 	{
 		system("cls");
@@ -76,19 +77,39 @@ void Czlowiek::przydziel_punkty()
 		switch (wybor)
 		{
 		case 1:
-			sila++;
-			punkty--;
+			if (punkty > 0)
+			{
+				sila++;
+				punkty--;
+			}
+			else
+				cout << "Nie masz punktow statystyk" << endl;
+			system("pause");
 			break;
 		case 2:
-			zrecznosc++;
-			punkty--;
+			if (punkty > 0)
+			{
+				zrecznosc++;
+				punkty--;
+			}
+			else
+				cout << "Nie masz punktow statystyk" << endl;
+			system("pause");
 			break;
 		case 3:
-			inteligencja++;
-			punkty--;
+			if (punkty > 0)
+			{
+				inteligencja++;
+				punkty--;
+			}
+			else
+				cout << "Nie masz punktow statystyk" << endl;
+			system("pause");
 			break;
-		}
-	} while (punkty != 0);
+		case 4:
+			stop = true;
+		} 
+	} while (punkty != 0 && stop != true );
 }
 
 void Czlowiek::zdobadz_exp()

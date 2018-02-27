@@ -10,8 +10,6 @@ Wojownik::Wojownik(string n, string r, string p,int d, int s, int z, int i, int 
     furia=fur;
     }
 
-
-
 void Wojownik::wyswietl()
 {
     Czlowiek::wyswietl();

@@ -9,9 +9,14 @@ int main()
     int a=1;
     while (a!=0)
     {
+		system("cls");
         cout << "Wybierz opcje: "<<endl;
         cout << "1.Zmien nazwe postaci: "<<endl;
         cout << "2.Wyswietl statystyki postaci: "<<endl;
+		cout << "3.Zyskaj doswiadczenie." << endl;
+		cout << "4.Przydziel punkty statystyk: " << endl;
+		cout << endl;
+		cout << "0. Exit" << endl;
         cin >> a;
         switch(a)
         {
